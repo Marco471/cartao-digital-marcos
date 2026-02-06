@@ -1,0 +1,351 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.perfil {
+  width: 100%;
+  max-width: 360px;
+  margin: 40px 0 20px;
+  padding: 30px 18px;
+  text-align: center;
+  background: linear-gradient(135deg, #2b174f, #4b2c6f, #6a11cb);
+  color: #fff;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.perfil h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.perfil p {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+}
+
+/* CARDS */
+.card {
+  width: 100%;
+  max-width: 360px;
+  margin: 16px auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeUp 0.6s ease both;
+}
+
+.card h2 {
+  color: #6a11cb;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin-top: 8px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* BOTÕES */
+.btn-app {
+  display: block;
+  margin-top: 12px;
+  padding: 12px;
+  text-align: center;
+  background: #203a43;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* TECNOLOGIAS */
+.tech-list {
+  list-style: none;
+}
+
+.tech-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* FOTO */
+.profile-photo {
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.profile-text strong {
+  color: #6a11cb;
+}
+
+/* MAPA */
+.location iframe {
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* WHATSAPP */
+.btn-wpp-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.btn-wpp-main:active {
+  transform: scale(0.97);
+}
+
+/* COMPARTILHAR */
+.share-link {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  color: #1e5bd8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* EMAIL */
+.email {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.email a {
+  color: #203a43;
+  text-decoration: none;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== CORES ESPECÍFICAS POR SEÇÃO ===== */
+
+/* LOCALIZAÇÃO */
+.card.location h2 {
+  color: #1e5bd8; /* azul */
+}
+
+.card.location {
+  border-left: 4px solid #1e5bd8;
+}
+
+/* CONTATO */
+.card.whatsapp h2 {
+  color: #1f8f5f; /* verde */
+}
+
+.card.whatsapp {
+  border-left: 4px solid #1f8f5f;
+}
+
+/* LINK COMPARTILHAR */
+.share-link {
+  color: #1e5bd8;
+}
+
+/* EMAIL */
+.email a {
+  color: #203a43;
+}
+/* ===== CORREÇÃO CABEÇALHO (MOBILE FRIENDLY) ===== */
+
+.perfil {
+  max-width: 100%;          /* ocupa toda a largura */
+  border-radius: 0;         /* remove cantos arredondados */
+  margin: 0;                /* encosta no topo */
+  
+  /* Azul tecnológico */
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+}
+/* ===== CABEÇALHO AZUL ORIGINAL ===== */
+
+.perfil {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 28px 18px;
+
+  /* AZUL ORIGINAL */
+  background: #203a43;
+
+  color: #ffffff;
+  text-align: center;
+
+  border-radius: 0; /* remove cantos arredondados */
+  box-shadow: none; /* remove sombra do topo */
+}
+/* ===== CABEÇALHO AZUL VS CODE ===== */
+
+.perfil {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 28px 18px;
+
+  /* AZUL VS CODE */
+  background: #007ACC;
+
+  color: #ffffff;
+  text-align: center;
+
+  border-radius: 0;   /* sem cantos arredondados */
+  box-shadow: none;   /* visual limpo tipo app */
+}
+/* TÍTULOS AZUL VS CODE */
+.title-blue {
+  color: #007ACC;
+}
+
+/* Olá! Sou Marcos */
+.profile-text strong {
+  color: #007ACC;
+}
+/* ===== TITULOS AZUL VS CODE ===== */
+
+.title-blue {
+  color: #007ACC !important;
+}
+
+/* TEXTO OLÁ SOU MARCOS */
+.profile-text strong {
+  color: #007ACC;
+}
+/* ===== FORÇAR AZUL VS CODE EM TÍTULOS ESPECÍFICOS ===== */
+
+/* Aplicativo PWA */
+.card:nth-of-type(1) h2 {
+  color: #007ACC;
+}
+
+/* Tecnologias */
+.card:nth-of-type(3) h2 {
+  color: #007ACC;
+}
+
+/* Olá! Sou Marcos */
+.profile-text strong {
+  color: #007ACC;
+}
+/* ===== CABEÇALHO AZUL MAIS ALTO ===== */
+
+.perfil {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+
+  /* AQUI está o ajuste principal */
+  padding: 48px 18px 60px; /* topo | lados | fundo */
+
+  background: #007ACC; /* azul VS Code */
+  color: #ffffff;
+  text-align: center;
+
+  border-radius: 0;
+  box-shadow: none;
+}
+/* ===== CABEÇALHO SEM FUNDO ===== */
+
+.perfil {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 40px 18px 30px;
+
+  background: transparent; /* remove fundo azul */
+  color: #222;              /* texto escuro */
+  text-align: center;
+
+  border-radius: 0;
+  box-shadow: none;
+}
+/* ===== VER APP SEM FUNDO ===== */
+
+.btn-app {
+  background: transparent;     /* remove fundo */
+  color: #007ACC;              /* azul VS Code */
+  padding: 0;                  /* remove efeito de botão */
+  margin-top: 12px;
+  font-weight: 600;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* efeito ao passar o dedo/mouse */
+.btn-app:hover {
+  text-decoration: underline;
+}
+/* ===== BOTÃO WHATSAPP MAIS COMPACTO ===== */
+
+.btn-wpp-main {
+  padding: 12px;          /* antes estava muito grande */
+  font-size: 1rem;        /* reduz o texto */
+  gap: 8px;               /* menos espaço entre ícone e texto */
+  border-radius: 12px;    /* mais discreto */
+}
+
+/* ÍCONE UM POUCO MENOR */
+.btn-wpp-main svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+
+
+
