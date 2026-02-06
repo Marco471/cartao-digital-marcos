@@ -345,6 +345,26 @@ main {
   height: 18px;
 }
 
+/* ===== IMAGENS DOS PROJETOS (VER APP) ===== */
+
+.print {
+  width: 100%;
+  max-width: 320px;     /* controla tamanho no mobile */
+  height: auto;
+  display: block;
+  margin: 12px auto;    /* centraliza */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Em telas maiores */
+@media (min-width: 768px) {
+  .print {
+    max-width: 420px;
+  }
+}
+
+
 
 
 
